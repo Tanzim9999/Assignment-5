@@ -5,7 +5,7 @@ function clickSection(id){
 }
 
 function buttonColor(id){
-    document.getElementById('donateButton').classList.remove('bg-specialgreen')
-    document.getElementById('historyButton').classList.remove('bg-specialgreen')
-    document.getElementById(id).classList.add('bg-specialgreen')
+    document.getElementById('donateButton').classList.remove('!bg-specialgreen')
+    document.getElementById('historyButton').classList.remove('!bg-specialgreen')
+    document.getElementById(id).classList.add('!bg-specialgreen')
 }
