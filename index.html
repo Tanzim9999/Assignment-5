@@ -38,34 +38,44 @@
       <nav class="sticky top-0 backdrop-blur shadow-sm pb-1 z-40">
         <!-- Navbar Part 1 -->
         <div
-          class="navbar bg-base-100 flex justify-around pt-6 pb-16 bg-specialyellow"
+          class="navbar bg-base-100 flex flex-col gap-5 lg:gap-0 lg:flex-row justify-around lg:pt-6 pb-3 lg:pb-16 bg-specialyellow"
         >
-          <button class="btn btn-sm bg-specialgreen px-6"><a href="./blog.html">Blog</a></button>
+          <button class="btn btn-sm bg-specialgreen px-6">
+            <a href="./blog.html">Blog</a>
+          </button>
           <div class="gap-5">
             <img src="./assets/logo.png" alt="" />
             <a class="text-lg font-bold">Donate Bangladesh</a>
           </div>
           <div class="gap-1">
             <img src="./assets/coin.png" alt="" />
-            <p id="balance" >5500</p><span>BDT</span>
+            <p id="balance">5500</p>
+            <span>BDT</span>
           </div>
         </div>
         <!-- Navbar Part2 Buttons -->
-        <div class="flex justify-center gap-4 my-8">
-          <button id="donateButton" class="btn btn bg-white px-6">Donation</button>
-          <button id="historyButton" class="btn btn bg-white px-6">History</button>
+        <div class="flex justify-center gap-4 my-4">
+          <button id="donateButton" class="btn btn bg-white px-6">
+            Donation
+          </button>
+          <button id="historyButton" class="btn btn bg-white px-6">
+            History
+          </button>
         </div>
       </nav>
       <!-- hero cards section -->
-      <section id="donationSection" class="hidden mx-36 flex flex-col gap-8 mb-20">
+      <section
+        id="donationSection"
+        class="hidden lg:mx-36 mx-5 flex flex-col gap-8 mb-20"
+      >
         <!-- Card 1 -->
         <div class="hero border border-borderclr rounded-lg p-8">
           <div class="hero-content flex-col lg:flex-row gap-10">
             <img src="./assets/noakhali.png" class="rounded-lg shadow-2xl" />
             <div class="flex flex-col gap-4">
-              <div class="btn cursor-default w-1/3 text-base font-light">
+              <div class="btn cursor-default lg:w-1/3 text-base font-light">
                 <img class="h-3/4" src="./assets/coin.png" alt="" />
-                <p id="sectionBalance" >1000</p>
+                <p id="sectionBalance">1000</p>
                 <span>BDT</span>
               </div>
               <h1 id="title-1" class="text-xl font-bold">
@@ -85,7 +95,9 @@
                 placeholder="Write Donation Amount"
                 class="input font-light text-gray-500 input-bordered w-full max-w-full"
               />
-              <button id="donateNow" class="btn btn-block bg-specialgreen">Donate Now</button>
+              <button id="donateNow" class="btn btn-block bg-specialgreen">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -94,9 +106,9 @@
           <div class="hero-content flex-col lg:flex-row gap-10">
             <img src="./assets/feni.png" class="rounded-lg shadow-2xl" />
             <div class="flex flex-col gap-4">
-              <div class="btn cursor-default w-1/3 text-base font-light">
+              <div class="btn cursor-default lg:w-1/3 text-base font-light">
                 <img class="h-3/4" src="./assets/coin.png" alt="" />
-                <p id="sectionBalance2" >600</p>
+                <p id="sectionBalance2">600</p>
                 <span>BDT</span>
               </div>
               <h1 id="title-2" class="text-xl font-bold">
@@ -112,12 +124,15 @@
                 towards making a real difference. Please consider donating today
                 to assist those in urgent need.
               </p>
-              <input id="inputField2"
+              <input
+                id="inputField2"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input font-light text-gray-500 input-bordered w-full max-w-full"
               />
-              <button id="donateNow2" class="btn btn-block bg-specialgreen">Donate Now</button>
+              <button id="donateNow2" class="btn btn-block bg-specialgreen">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -129,9 +144,9 @@
               class="rounded-lg shadow-2xl"
             />
             <div class="flex flex-col gap-4">
-              <div class="btn cursor-default w-1/3 text-base font-light">
+              <div class="btn cursor-default lg:w-1/3 text-base font-light">
                 <img class="h-3/4" src="./assets/coin.png" alt="" />
-                <p id="sectionBalance3" >1000</p>
+                <p id="sectionBalance3">1000</p>
                 <span>BDT</span>
               </div>
               <h1 id="title-3" class="text-xl font-bold">
@@ -154,16 +169,23 @@
                 placeholder="Write Donation Amount"
                 class="input font-light text-gray-500 input-bordered w-full max-w-full"
               />
-              <button id="donateNow3" class="btn btn-block bg-specialgreen">Donate Now</button>
+              <button id="donateNow3" class="btn btn-block bg-specialgreen">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- History section -->
-      <section id="historySection" class="hidden mx-36 flex flex-col gap-5 my-10">
-      </section>
+      <section
+        id="historySection"
+        class="hidden lg:mx-36 mx-5 flex flex-col gap-5 my-10"
+      ></section>
       <!-- message board -->
-      <div id="alert" class="hidden fixed top-0 left-0 z-50 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+      <div
+        id="alert"
+        class="hidden fixed top-0 left-0 z-50 w-full h-full flex items-center justify-center bg-black bg-opacity-50"
+      >
         <div
           class="text-center rounded-lg bg-white px-32 py-8 flex flex-col justify-center items-center gap-5 my-7"
         >

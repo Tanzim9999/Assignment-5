@@ -39,9 +39,11 @@
       <nav class="sticky top-0 backdrop-blur pb-1 z-40">
         <!-- Navbar Part 1 -->
         <div
-          class="navbar bg-base-100 flex justify-around pt-6 pb-16 bg-specialyellow"
+          class="navbar bg-base-100 flex flex-col gap-5 lg:gap-0 lg:flex-row justify-around lg:pt-6 pb-3 lg:pb-16 bg-specialyellow"
         >
-          <button class="btn btn-sm bg-specialgreen px-6"><a href="./index.html">Home</a></button>
+          <button class="btn btn-sm bg-specialgreen px-6">
+            <a href="./index.html">Home</a>
+          </button>
           <div class="gap-5">
             <img src="./assets/logo.png" alt="" />
             <a class="text-lg font-bold">Donate Bangladesh</a>
@@ -53,36 +55,59 @@
         </div>
       </nav>
       <!-- Body Section QNA -->
-      <section class="mx-36 space-y-5 my-10">
+      <section class="lg:mx-36 mx-5 space-y-5 my-10">
         <h3 class="text-4xl">Important Questions & Answers</h3>
         <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-            <div class="collapse-content">
-              <p>Dom is like a structure of the HTML, Using it we can see, edit , delete html elements easily</p>
-            </div>
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
           </div>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-            <div class="collapse-content">
-              <p>We can select an element from the dom using specific ID, tag or class name. We can also use querySelector and querySelectorAll</p>
-            </div>
+          <div class="collapse-content">
+            <p>
+              Dom is like a structure of the HTML, Using it we can see, edit ,
+              delete html elements easily
+            </p>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-            <div class="collapse-content">
-              <p>By using event delegation we can use one event listener on parent element to manage multiple child elements of it</p>
-            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
           </div>
-          <div class="collapse collapse-plus bg-base-200">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-            <div class="collapse-content">
-              <p>By using getAttribute(),setAttribute() and removeAttribute() and for adding or removing classes using classList we can manipulate an element's attributes and styles using the dom </p>
-            </div>
+          <div class="collapse-content">
+            <p>
+              We can select an element from the dom using specific ID, tag or
+              class name. We can also use querySelector and querySelectorAll
+            </p>
           </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              By using event delegation we can use one event listener on parent
+              element to manage multiple child elements of it
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              By using getAttribute(),setAttribute() and removeAttribute() and
+              for adding or removing classes using classList we can manipulate
+              an element's attributes and styles using the dom
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <!-- Footer section -->
