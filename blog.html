@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+            colors: {
+              specialgreen: "#B4F461",
+              specialyellow: "#F9F7F3",
+              borderclr: "rgba(17, 17, 17, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexend">
+    <main>
+      <!-- Navbar section -->
+      <nav class="sticky top-0 backdrop-blur pb-1 z-40">
+        <!-- Navbar Part 1 -->
+        <div
+          class="navbar bg-base-100 flex justify-around pt-6 pb-16 bg-specialyellow"
+        >
+          <button class="btn btn-sm bg-specialgreen px-6">Blog</button>
+          <div class="gap-5">
+            <img src="./assets/logo.png" alt="" />
+            <a class="text-lg font-bold">Donate Bangladesh</a>
+          </div>
+          <div class="gap-3">
+            <img src="./assets/coin.png" alt="" />
+            <p>5500 <span>BDT</span></p>
+          </div>
+        </div>
+      </nav>
+      <!-- Body Section QNA -->
+      <section class="mx-36 space-y-5 my-10">
+        <h3 class="text-4xl">Important Questions & Answers</h3>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="h-36 bg-specialyellow"></footer>
+  </body>
+</html>
