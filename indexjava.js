@@ -16,14 +16,15 @@ document.getElementById("donateButton").addEventListener("click", function () {
 //
 //
 document.getElementById("donateNow").addEventListener("click", function () {
-  const donateAmount = parseFloat(document.getElementById("inputField1").value);
+  const donateCheck = document.getElementById("inputField1").value;
+  const donateAmount = parseFloat(donateCheck);
   const balance = parseFloat(document.getElementById("balance").innerText);
   const sectionBalance = parseFloat(
     document.getElementById("sectionBalance").innerText
   );
   if (
     typeof donateAmount !== "number" ||
-    isNaN(donateAmount) ||
+    isNaN(donateCheck) ||
     donateAmount <= 0 ||
     donateAmount > balance
   ) {
@@ -63,14 +64,15 @@ document.getElementById("closeAlert").addEventListener("click", function () {
 //
 //
 document.getElementById("donateNow2").addEventListener("click", function () {
-  const donateAmount = parseFloat(document.getElementById("inputField2").value);
+  const donateCheck = document.getElementById("inputField2").value;
+  const donateAmount = parseFloat(donateCheck);
   const balance = parseFloat(document.getElementById("balance").innerText);
   const sectionBalance = parseFloat(
     document.getElementById("sectionBalance2").innerText
   );
   if (
     typeof donateAmount !== "number" ||
-    isNaN(donateAmount) ||
+    isNaN(donateCheck) ||
     donateAmount <= 0 ||
     donateAmount > balance
   ) {
@@ -105,14 +107,15 @@ document.getElementById("donateNow2").addEventListener("click", function () {
 //
 //
 document.getElementById("donateNow3").addEventListener("click", function () {
-  const donateAmount = parseFloat(document.getElementById("inputField3").value);
+  const donateCheck = document.getElementById("inputField3").value;
+  const donateAmount = parseFloat(donateCheck);
   const balance = parseFloat(document.getElementById("balance").innerText);
   const sectionBalance = parseFloat(
     document.getElementById("sectionBalance3").innerText
   );
   if (
     typeof donateAmount !== "number" ||
-    isNaN(donateAmount) ||
+    isNaN(donateCheck) ||
     donateAmount <= 0 ||
     donateAmount > balance
   ) {
