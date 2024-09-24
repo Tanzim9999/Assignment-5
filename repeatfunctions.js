@@ -9,3 +9,7 @@ function buttonColor(id) {
   document.getElementById("historyButton").classList.remove("!bg-specialgreen");
   document.getElementById(id).classList.add("!bg-specialgreen");
 }
+
+function clearValue(id) {
+    document.getElementById(id).value = "";
+}

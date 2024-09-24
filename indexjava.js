@@ -37,6 +37,7 @@ document.getElementById("donateNow").addEventListener("click", function () {
     const newSectionBalance = sectionBalance + donateAmount;
     document.getElementById("balance").innerText = newBalance;
     document.getElementById("sectionBalance").innerText = newSectionBalance;
+    clearValue("inputField1");
     const title1 = document.getElementById("title-1").innerText;
     // Transactions History Stuff
     const ajkerDate = new Date();
@@ -85,6 +86,7 @@ document.getElementById("donateNow2").addEventListener("click", function () {
     const newSectionBalance = sectionBalance + donateAmount;
     document.getElementById("balance").innerText = newBalance;
     document.getElementById("sectionBalance2").innerText = newSectionBalance;
+    clearValue("inputField2");
     const title = document.getElementById("title-2").innerText;
     // Transactions History Stuff
     const ajkerDate = new Date();
@@ -130,6 +132,7 @@ document.getElementById("donateNow3").addEventListener("click", function () {
     const newSectionBalance = sectionBalance + donateAmount;
     document.getElementById("balance").innerText = newBalance;
     document.getElementById("sectionBalance3").innerText = newSectionBalance;
+    clearValue("inputField3");
     const title = document.getElementById("title-3").innerText;
     // Transactions History Stuff
     const ajkerDate = new Date();
